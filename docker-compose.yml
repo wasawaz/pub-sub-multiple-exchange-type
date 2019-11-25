@@ -1,0 +1,33 @@
+version: '3.5'
+services:
+  node1:
+    image: local/rabbitmq-pubsub:dev
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RABBITMQ_DEFAULT_NAMESPACE=sandwish
+      - RABBITMQ_PREFIX_NAMESPACE=sandwish1
+    networks:
+      - local
+  node2:
+    image: local/rabbitmq-pubsub:dev
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - RABBITMQ_DEFAULT_NAMESPACE=sandwish
+      - RABBITMQ_PREFIX_NAMESPACE=sandwish2
+    networks:
+      - local
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - local
+
+
+
+networks:
+  local:
+    name: local_dev

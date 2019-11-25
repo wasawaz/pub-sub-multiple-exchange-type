@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMqPubSub", "RabbitMqPubSub\RabbitMqPubSub.csproj", "{17640DF2-5A57-4165-BD03-7A5CBA85F407}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17640DF2-5A57-4165-BD03-7A5CBA85F407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17640DF2-5A57-4165-BD03-7A5CBA85F407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17640DF2-5A57-4165-BD03-7A5CBA85F407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17640DF2-5A57-4165-BD03-7A5CBA85F407}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
